@@ -4,57 +4,35 @@
     <title>Document</title>
 
     <style>
-      * {
-        /* 너비 | 스타일 | 컬러 */
-        border: 2px dashed black;
-      }
-      html {
-        background-color: peru;
-      }
       body {
-        background-color: thistle;
         margin: 20px;
-        padding: 20px;
       }
-      div {
-        padding: 10px;
-        background-color: rgb(255, 255, 255);
-      }
-      #first {
-        height: 150px;
-        width: 150px;
-        background-color: firebrick;
-      }
-      #second {
-        height: 100px;
-        width: 100px;
-        background-color: teal;
-      }
-      #third {
-        height: 50px;
-        width: 50px;
-        background-color: tomato;
-      }
-      #fourth {
-        height: 25px;
-        width: 25px;
-        background-color: tan;
-      }
-
       span {
-        border-style: dotted;
+        background-color: teal;
+        padding: 20px;
+        margin: 30px;
+      }
+      .btn {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .tomato {
+        background-color: tomato;
+        color: white;
+      }
+      .teal {
+        background-color: teal;
+        color: white;
       }
     </style>
   </head>
   <body>
-    <div id="first">
-      <div id="second">
-        <div id="third">
-          <div id="fourth">
-            <span>hello</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
+    <span class="btn teal">hello</span>
+    <span class="btn tomato">hello</span>
   </body>
 </html>
