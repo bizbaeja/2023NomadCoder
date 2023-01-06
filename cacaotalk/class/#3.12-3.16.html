@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      :root {
+        --pure-bcg: white;
+        --bcg: #f5f5f5;
+        --tomato: #ff6347;
+        --teal: #008080;
+        --burlywood: #deb887;
+        --thistle: #d7bfd7;
+      }
+      html {
+        display: flex;
+        background-color: var(--bcg);
+        height: 100vh;
+        justify-content: space-around;
+        align-items: center;
+      }
+      body {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      p {
+        padding-left: 10px;
+        font-weight: 700;
+      }
+      .Wrapper {
+        width: 200px;
+        height: 300px;
+        margin: 20px;
+        border: 7px solid white;
+      }
+      .InnerBox {
+        margin-top: 20px;
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        background-color: var(--pure-bcg);
+      }
+      #first {
+        background-color: var(--tomato);
+      }
+      #second {
+        background-color: var(--teal);
+      }
+      #third {
+        background-color: var(--burlywood);
+      }
+      #fourth {
+        background-color: var(--thistle);
+      }
+    </style>
+    <title>The Colors Best</title>
+  </head>
+  <body visibility="hidden">
+    <div>
+      <div class="Wrapper" id="first">
+        <div class="InnerBox">
+          <p>tomato</p>
+          <p>#008080</p>
+        </div>
+      </div>
+      <div class="Wrapper" id="second">
+        <div class="InnerBox">
+          <p>tomato</p>
+          <p>#008080</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="Wrapper" id="third">
+        <div class="InnerBox">
+          <p>tomato</p>
+          <p>#008080</p>
+        </div>
+      </div>
+      <div class="Wrapper" id="fourth">
+        <div class="InnerBox">
+          <p>tomato</p>
+          <p>#008080</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
