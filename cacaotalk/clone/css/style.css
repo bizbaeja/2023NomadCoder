@@ -3,7 +3,12 @@
 @import "variable.css";
 @import "./components/status-bar.css";
 @import "./components/nav-bar.css";
+@import "./components/screen-header.css";
+@import "./screens/friends.css";
+@import "./screens/login.css";
+@import "./components/user-component.css";
 body {
+  color: #2e363e;
   box-sizing: border-box;
   width: 100vw;
   height: 100vh;
