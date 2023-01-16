@@ -9,6 +9,8 @@
 @import "./components/user-component.css";
 @import "./components/badge.css";
 @import "./components/find.css";
+@import "./components/icon-row.css";
+@import "./screens/more.css";
 body {
   color: #2e363e;
   box-sizing: border-box;
