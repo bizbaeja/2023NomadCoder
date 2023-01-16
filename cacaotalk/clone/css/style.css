@@ -7,6 +7,8 @@
 @import "./screens/friends.css";
 @import "./screens/login.css";
 @import "./components/user-component.css";
+@import "./components/badge.css";
+@import "./components/find.css";
 body {
   color: #2e363e;
   box-sizing: border-box;
@@ -52,4 +54,7 @@ body {
 #login-form input[type="submit"] {
   background-color: var(--yellow);
   cursor: pointer;
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
 }
