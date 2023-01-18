@@ -20,8 +20,8 @@ function handleContextMenu() {
   title.innerHTML = "You was a right click!";
 }
 
-title.addEventListener("click", handleTitleClick);
-title.addEventListener("mouseenter", handleMouseEnter);
-title.addEventListener("mouseleave", handleMouseLeave);
-window.addEventListener("resize", handleResize);
-window.addEventListener("contextmenu", handleContextMenu);
+title.onclick = handleTitleClick;
+title.onmouseenter = handleMouseEnter;
+title.onmouseleave = handleMouseLeave;
+window.onresize = handleResize;
+window.oncontextmenu = handleContextMenu;
