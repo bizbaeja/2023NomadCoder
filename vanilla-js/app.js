@@ -15,13 +15,26 @@ function handleMouseLeave() {
 }
 function handleResize() {
   title.innerHTML = "You just resized!";
+  document.body.style.backgroundColor = "tomato";
 }
 function handleContextMenu() {
   title.innerHTML = "You was a right click!";
 }
 
+function handleWindowOffline() {
+  alert("SOS no WIFI");
+}
+function handleWindowOnline() {
+  alert("All GOOD");
+}
+function handleWindowCopy() {
+  alert("copier!");
+}
 title.onclick = handleTitleClick;
 title.onmouseenter = handleMouseEnter;
 title.onmouseleave = handleMouseLeave;
 window.onresize = handleResize;
 window.oncontextmenu = handleContextMenu;
+window.addEventListener("offline", handleWindowOffline);
+window.addEventListener("online", handleWindowOnline);
+window.addEventListener("copy", handleWindowCopy);
