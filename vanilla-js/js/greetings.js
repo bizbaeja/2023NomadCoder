@@ -4,12 +4,15 @@ const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+
 function onLoginSubmit(e) {
   e.preventDefault();
   loginForm.classList.add(HIDDEN_CLASSNAME);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
-  greeting.innerText = `Hello + ${USERNAME_KEY}`;
+}
+function paintGreetings(username) {
+  greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
@@ -22,6 +25,6 @@ if (savedUsername === null) {
 } else {
   //show the greetings
 
-  greeting.classList.remove(HIDDEN_CLASSNAME);
-  greeting.innerHTML = `Hello + ${USERNAME_KEY}`;
+  paintGreetings(savedUsername);
 }
+greeting.style.cssText = "color:pink; font-size:26px;";

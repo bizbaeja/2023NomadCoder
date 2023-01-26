@@ -230,3 +230,7 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQoute = quotes[Math.floor(Math.random() * quotes.length)];
 quote.innerText = '"' + todaysQoute.quote + '"';
 author.innerText = "-" + " " + todaysQoute.author;
+
+document.body.style.backgroundColor = "black";
+quote.style.cssText = "color:whitesmoke;  font-size:30px;";
+author.style.cssText = "color:whitesmoke; font-size:10px;";
