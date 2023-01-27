@@ -1,6 +1,6 @@
 //@ts-ignore
-import Coin from "../src/screens/Coin";
-import Coins from "../src/screens/Coins";
+import Coin from "./screens/Coin";
+import Coins from "./screens/Coins";
 import { HelmetProvider } from "react-helmet-async";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
