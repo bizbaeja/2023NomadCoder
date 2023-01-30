@@ -1,27 +1,37 @@
 const canvas = document.querySelector("canvas");
-
+const lineWidth = document.getElementById("line-width");
 //constext = 캔버스에 그림을 그릴 떄 사용하 brush
 const context = canvas.getContext("2d");
 canvas.width = 800;
 canvas.height = 800;
+context.lineWidth = lineWidth.value;
+let isPainting = false;
 
-context.lineWidth = 2;
-
-const colors = [
-  "#ff3838",
-  "#ffb8b8",
-  "#c56cf0",
-  "#ff9f1a",
-  "#fff200",
-  "#32ff7e",
-  "#7efff5",
-];
-function onClick(event) {
+function onMove(event) {
+  if (isPainting) {
+    context.lineTo(event.offsetX, event.offsetY);
+    context.stroke();
+    return;
+  }
   context.beginPath();
-  context.moveTo(0, 0);
-  const color = colors[Math.floor(Math.random() * colors.length)];
-  context.strokeStyle = color;
-  context.lineTo(event.offsetX, event.offsetY);
-  context.stroke();
+  context.moveTo(event.offsetX, event.offsetY);
 }
-addEventListener("mousemove", onClick);
+
+function onMousedown() {
+  isPainting = true;
+}
+
+function onMouseup() {
+  isPainting = false;
+}
+
+function onLineWidthChange(event) {
+  console.log(event.target.value);
+  context.lineWidth = event.target.value;
+}
+
+canvas.addEventListener("mousemove", onMove);
+canvas.addEventListener("mousedown", onMousedown);
+canvas.addEventListener("mouseup", onMouseup);
+canvas.addEventListener("mouseleave", onMouseup);
+lineWidth.addEventListener("change", onLineWidthChange);
