@@ -11,7 +11,7 @@
   "dependencies": {
     "@types/styled-components": "^5.1.26",
     "@types/styled-components-react-native": "^5.2.0",
-    "expo": "~47.0.8",
+    "expo": "~47.0.14",
     "expo-location": "~15.0.1",
     "expo-status-bar": "~1.4.2",
     "react": "18.1.0",
